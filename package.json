@@ -1,0 +1,21 @@
+{
+  "name": "@foxkey/wrapper",
+  "author": "@davilson",
+  "private": true,
+  "workspaces": [
+    "client",
+    "micro-rest",
+    "micro-grpc"
+  ],
+  "scripts": {
+    "wrk:micro-grpc": "yarn workspace @foxkey/micro-grpc start",
+    "wrk:micro-rest": "yarn workspace @foxkey/micro-rest start",
+    "wrk:client": "yarn workspace @foxkey/client start",
+    "prestart": "yarn install",
+    "start": "npm-run-all --parallel wrk:*"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "yarn-run-all": "^3.1.1"
+  }
+}
