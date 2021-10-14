@@ -24,6 +24,6 @@ Após iniciar o projeto, basta acessar o link http://localhost:3000 para ter ace
 
 ## Sobre o projeto
 Temos 3 serviços criados no projeto, ambos iniciam em paralelo quando o comando `yarn start` é executado.
-- [@foxkey/micro-grpc](localhost:50051) - Serviço gRPC que roda na porta localhost:50051
+- [@foxkey/micro-grpc](http://localhost:50051) - Serviço gRPC que roda na porta localhost:50051
 - [@foxkey/micro-rest](http://localhost:9000) - Serviço REST que retorna dados para a aplicação web
 - [@foxkey/client](http://localhost:3000) - Cliente ReactJs para listagem e cadastro de produtos, resultado da comunicação entre os serviços
